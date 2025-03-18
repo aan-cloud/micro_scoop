@@ -31,7 +31,7 @@ const WholeSlideImageViewer = () => {
   // State for mouse position relative to the image (not the container)
   const [mousePosition, setMousePosition] = useState<{ x: number; y: number }>({ x: 0, y: 0 });
   // State for viewport size (hover area)
-  const [viewportBox, setViewportBox] = useState<{ width: number; height: number }>({ width: 100, height: 100 });
+  const [viewportBox, _] = useState<{ width: number; height: number }>({ width: 100, height: 100 });
   // State for hover status
   const [isHovering, setIsHovering] = useState<boolean>(false);
   // State for patient data
