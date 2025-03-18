@@ -79,7 +79,7 @@ const WholeSlideImageViewer = () => {
   useEffect(() => {
     const loadPatientData = async () => {
       try {
-        const response = await fetch('../output.json');
+        const response = await fetch('/output.json');
         const data = await response.json();
         const { parsedPatientData, parsedDetectionResults } = parsePatientData(data);
         setPatientData(parsedPatientData);
